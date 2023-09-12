@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Web</title>
+
+</head>
+
+<body>
+	<nav class="main-nav">
+		<div id="toggle-menu" class="toggle-menu">
+			<img src="img/menu.png" alt="">
+		</div>
+		<ul id="main-menu" class="main-menu">
+			<li class="main-menu__item">
+				<a id="inicio" onclick="removeMenu()" href="index.html" class="main-menu__link sombra"><strong>Inicio</strong></a>
+			</li>
+			<li class="main-menu__item"> 
+				<a onclick="removeMenu()" href="#categorias" class="main-menu__link sombra"><strong>Categorias</strong> </a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#productos" class="main-menu__link sombra"><strong>Productos</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#ofertas" class="main-menu__link sombra"><strong>Ofertas</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#marcas" class="main-menu__link sombra"><strong>Marcas</strong></a>
+			</li>
+		</ul>
+	</nav>
+    <header class="padding margen">
+        <div class="contenedor-header contenedor padding">
+            <div class="logo principal">
+                <img class="margen-top main-logo" src="img/logo2.png" alt="">
+                <div class="slogan">
+                    <h1 class="padding sombra">Tienda Armonía</h1>
+                    <small class="sombra">instrumentos y accesorios</small>
+                </div>
+
+            </div>
+
+
+
+            <div class="compras logo">
+                <a class="btn-sesion padding" href="#">Iniciar Sesión</a>
+
+                <a href="#">
+                    <div class="carrito">
+                        <div class="notificacion">
+                            <p><strong>0</strong></p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contenedor">
+        <h3 id="categorias" class="centrar-texto sombra margin-top-botton">CATEGORIAS</h3>
+        <div class="categoria margen padding margin-section">
+            <div class="txt-centrado cat-mic">
+                <a href="cat-mic.html">
+                    <h4 class="hitbox">Microfonos</h4>
+                </a>
+            </div>
+
+            <div class="txt-centrado cat-ampli">
+                <a href="cat-cuerdas.html">
+                    <h4 class="hitbox">Cuerdas</h4>
+                </a>
+
+
+            </div>
+
+            <div class="txt-centrado cat-cuerdas">
+                <a href="cat-escolar.html">
+                    <h4 class="hitbox">Escolar</h4>
+                </a>
+            </div>
+
+            <div class="txt-centrado cat-piano">
+                <a href="cat-teclados.html">
+                    <h4 class="hitbox">Teclados</h4>
+                </a>
+            </div>
+
+            <div class="txt-centrado cat-frotada">
+                <a href="cat-clasicos.html">
+                    <h4 class="hitbox">Clasicos</h4>
+                </a>
+            </div>
+
+            <div class="txt-centrado cat-vientos">
+                <a href="cat-vientos.html">
+                    <h4 class="hitbox">Vientos</h4>
+                </a>
+            </div>
+
+            <div class="txt-centrado cat-percu">
+                <a href="cat-percusion.html">
+                    <h4 class="hitbox">Percusion</h4>
+                </a>
+            </div>
+
+            <div class="txt-centrado cat-accesorios">
+                <a href="cat-accesorios.html">
+                    <h4 class="hitbox">Accesorios</h4>
+                </a>
+            </div>
+        </div>
+    </section>
+    <hr class="contenedor">
+
+
+    <main class="contenedor contacto">
+
+        <div class="politicas">
+
+            <h1 class="centrar-texto sombra margin-top-botton">Contactanos</h1>
+            <p>preguntas, reclamos, sugerencias.</p><br>
+            <p class="obli">*Debe rellenar todos los campos</p>
+        </div>
+
+
+        <div class="contenedor-contacto">
+
+            <form action="" method="post"></form>
+            <div class="centrar-texto contacto">
+
+                
+
+                
+                <div class="obligatorio">
+                    <input id="nombre" type="text" placeholder="Ingresa tu nombre" required>
+
+                </div>
+
+                <div class="obligatorio">
+                    <input id="apellido" type="text" placeholder="Ingresa tu apellido" required>
+
+                </div>
+
+                <div class="obligatorio">
+                    <input id="correo" type="text" placeholder="Ingresa tu correo" required>
+
+                </div>
+                
+                <div class="obligatorio">
+                    <input class="descrip" id="descripcion" type="text" placeholder="Ingresa tu consulta" required>
+
+                </div>
+
+
+
+
+                <button class="btn-siguiente" onclick="recogerDatos()">siguiente</button>
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </main>
+
+    </section>
+
+
+
+    </section>
+    <footer class="pie contenedor margin-top-botton">
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Información</h4>
+            <a class="padding margen" href="quienesSomos.html">Quienes Somos</a>
+            <a class="padding margen" href="politicas.html">Politicas de la tienda</a>
+            <a class="padding margen" href="politicaDevolucion.html">Politicas de devolución</a>
+            <a class="padding margen" href="politicasEnvio.html">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Cuenta</h4>
+            <a class="padding margen" href="dashboard.html#dashboard">Mi Cuenta</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Carrito</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Orden</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Ayuda</h4>
+            <a class="padding margen" href="comoLlegar.html">Cómo Llegar</a>
+            <a class="padding margen" href="comoComprar.html">Cómo Comprar</a>
+            <a class="padding margen" href="FAQ.html">Preguntas Frecuentes</a>
+            <a class="padding margen" href="contacto.html">Contáctanos</a>
+        </div>
+
+        <div class="red  elementos margin-section">
+            <h4 class="padding">Nuestras Redes</h4>
+            <div class=" contenedor-redes padding margen">
+                <div class="fb">
+                    <p>a</p>
+                </div>
+                <div class="wsp">
+                    <p>a</p>
+                </div>
+                <div class="twich">
+                    <p>a</p>
+                </div>
+                <div class="tiktok">
+                    <p>a</p>
+                </div>
+                <div class="insta">
+                    <p>a</p>
+                </div>
+                <div class="twitter">
+                    <p>a</p>
+                </div>
+                <div class="youtube">
+                    <p>a</p>
+                </div>
+                <div class="in">
+                    <p>a</p>
+                </div>
+                <div class="avion">
+                    <p>a</p>
+                </div>
+                <div class="pinterest">
+                    <p>a</p>
+                </div>
+
+            </div>
+
+            <small class="powered">Powered by Christhian Aracena</small>
+        </div>
+
+
+    </footer>
+    <script src="miScript.js"></script>
+</body>
+
+</html>

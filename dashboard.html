@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+
+    <script src="https://kit.fontawesome.com/58b7154440.js" crossorigin="anonymous"></script>
+    <title>Web</title>
+</head>
+
+<body>
+    <nav class="main-nav">
+        <div id="toggle-menu" class="toggle-menu">
+            <img src="img/menu.png" alt="">
+        </div>
+        <ul id="main-menu" class="main-menu">
+            <li class="main-menu__item">
+                <a id="inicio" onclick="removeMenu()" href="index.html"
+                    class="main-menu__link sombra"><strong>Inicio</strong></a>
+            </li>
+            <li class="main-menu__item">
+                <a onclick="removeMenu()" href="#categorias" class="main-menu__link sombra"><strong>Categorias</strong>
+                </a>
+            </li>
+            <li class="main-menu__item">
+                <a onclick="removeMenu()" href="index.html#productos"
+                    class="main-menu__link sombra"><strong>Productos</strong></a>
+            </li>
+            <li class="main-menu__item">
+                <a onclick="removeMenu()" href="index.html#ofertas"
+                    class="main-menu__link sombra"><strong>Ofertas</strong></a>
+            </li>
+            <li class="main-menu__item">
+                <a onclick="removeMenu()" href="#marcas" class="main-menu__link sombra"><strong>Marcas</strong></a>
+            </li>
+        </ul>
+    </nav>
+    <header class="padding margen">
+        <div class="contenedor-header contenedor padding">
+            <div class="logo principal">
+                <img class="margen-top main-logo" src="img/logo2.png" alt="">
+                <div class="slogan">
+                    <h1 class="padding sombra">Tienda Armonía</h1>
+                    <small class="sombra">instrumentos y accesorios</small>
+                </div>
+
+            </div>
+
+            <div class="find logo">
+
+                <input class="buscador margen" type="text" id="barra-buscar" value placeholder=" Buscar">
+                <button class="lupa-buscador buscador"><img class src="img/lupa.png" alt="icono"></button>
+            </div>
+
+            <div class="compras logo">
+                <a class="btn-sesion padding" href="#">Iniciar Sesión</a>
+
+                <a href="#">
+                    <div class="carrito">
+                        <div class="notificacion">
+                            <p><strong>0</strong></p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- AQUI COMIENZA LA ESTRUCTURA DEL DASHBOARD -->
+
+
+    <main class="contenedor">
+
+
+        <h1 class="centrar-texto sombra margin-top-botton titulo" id="dashboard">DASHBOARD</h1>
+        <div class="panel-superior">
+            <p> <i class="fa-solid fa-gear g"></i> <strong>Panel de Control</strong></p>
+            <p><strong>Bienvenido: </strong>Christhian Aracena</p>
+        </div>
+
+        <div class="fondo-dashboard">
+
+
+            <div class="icon">
+                <i class="fa-solid fa-house animar" id="animar"></i>
+
+            </div>
+
+            <div class="icon">
+                <i class="fa-solid fa-ranking-star animar-nivel" id="nivel"></i>
+            </div>
+
+            <div class="icon">
+                <i class="fa-solid fa-cart-shopping animar-compras" id="compras"></i>
+            </div>
+
+            <div class="icon">
+                <i class="fa-solid fa-receipt animar-reclamos" id="reclamos"></i>
+            </div>
+
+
+            <div class="icon">
+                <i class="fa-solid fa-hand-holding-dollar animar-reembolsos" id="reembolsos"></i>
+            </div>
+
+
+
+            <nav class="nav-lateral">
+
+                <li class="elementos-li animar1" id="perfil-li">General</li>
+                <li class="elementos-li animar1" id="nivel-li">Nivel</li>
+                <li class="elementos-li animar1" id="compras-li">Compras</li>
+                <li class="elementos-li animar1" id="reclamos-li">Reclamos</li>
+                <li class="elementos-li animar1" id="reembolsos-li">Reembolsos</li>
+
+
+
+            </nav>
+
+
+            <div class="dashboard">
+
+                <div class="apartado-1 centrar-elemento">
+                    <h4 class="sombra inv-anual opacidad">Inversion Anual</h4>
+                    <h3 class="sombra inv-anual opacidad">$7.850.000</h3>
+                </div>
+
+                <!-- Donut -->
+                <div class="apartado-2 centrar-elemento sombra">
+                    <div class="donut centrar-elemento sombra">
+                        <div class="donut-centro centrar-elemento sombra ">
+                            <div class="cubrir centrar-elemento sombra opacidad "><span class="sat">100% de Satisfaccion</span> </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fin Donuts -->
+
+                <div class="apartado-3">
+
+                    <div class="txt-bar">
+                        <small class="txt-cuerdas">Cuerdas</small>
+                        <small class="txt-colegio">Colegio</small>
+                        <small class="txt-percusion">Percusion</small>
+                        <small class="txt-clasicos">Clasicos</small>
+
+                    </div>
+                    <div class="bar">
+
+                        <div>
+                            <div class="bar-cuerdas opacidad">10%</div>
+                            <div class="bar-colegio opacidad">44%</div>
+                            <div class="bar-percusion opacidad">17%</div>
+                            <div class="bar-clasicos">29%</div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="apartado-4 centrar-elemento">
+
+                    <!-- Donut -->
+                    <div class="apartado-4 centrar-elemento sombra">
+                        <div class="donut centrar-elemento sombra torta">
+                            <div class="donut-centro centrar-elemento sombra ">
+                                <div class="cubrir centrar-elemento sombra opacidad "><span class="sat">1.300 ptos<br>este mes</span> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Fin Donuts -->
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <h3 class="centrar-texto sombra margin-bottom">DASHBOARD</h3>
+        <div class="titulo">
+
+            <p> <i class="fa-solid fa-gear g"></i><strong>Panel de Control</strong></p>
+
+            <p class="bienvenido"><strong>Bienvenido: </strong>Christhian Aracena</p>
+        </div>
+
+        <div class="contenedor-dashboard">
+            <div class="nav-lateral">
+
+                <div class="fondo">
+                    <div class="fondo-inside">
+
+
+                            <ul class="elementos1">
+                                <div class="icono-awesome">
+                                    <i class="fa-solid fa-user animar" id="animar"></i>
+                                    <li class="elementos-li animar1" id="perfil-li">Perfil</li>
+                                </div>
+
+                                <div class="icono-awesome">
+                                    <i class="fa-solid fa-ranking-star animar" id="nivel"></i>
+                                    <li class="elementos-li animar1" id="nivel-li">Nivel</li>
+                                </div>
+                                <div class="icono-awesome">
+                                    <i class="fa-solid fa-cart-shopping animar" id="compras"></i>
+                                    <li class="elementos-li animar1" id="compras-li">Compras</li>
+                                </div>
+                                <div class="icono-awesome">
+                                    <i class="fa-solid fa-receipt animar" id="reclamos"></i>
+                                    <li class="elementos-li animar1" id="reclamos-li">Reclamos</li>
+                                </div>
+                                <div class="icono-awesome">
+                                    <i class="fa-solid fa-hand-holding-dollar animar" id="reembolsos"></i>
+                                    <li class="elementos-li animar1" id="reembolsos-li">Reembolsos</li>
+                                </div>
+                            </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard">
+                <div class="apartado-1">
+                    <h4>Inversion Anual</h4>
+                    <h2>$2.365.897</h2>
+                </div>
+                <div class="apartado-2">
+                    <div class="fondo-torta"></div>
+                    
+                    <div class="donuts">100% de Satisfaccion</div>
+                </div>
+                <div class="apartado-3"></div>
+                <div class="apartado-4"></div>
+            </div>
+        </div> -->
+
+    </main>
+
+
+    <footer class="pie contenedor margin-top-botton">
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Información</h4>
+            <a class="padding margen" href="quienesSomos.html">Quienes Somos</a>
+            <a class="padding margen" href="politicas.html">Politicas de la tienda</a>
+            <a class="padding margen" href="politicaDevolucion.html">Politicas de devolución</a>
+            <a class="padding margen" href="politicasEnvio.html">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Cuenta</h4>
+            <a class="padding margen" href="dashboard.html#dashboard">Mi Cuenta</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Carrito</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Orden</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Ayuda</h4>
+            <a class="padding margen" href="comoLlegar.html">Cómo Llegar</a>
+            <a class="padding margen" href="comoComprar.html">Cómo Comprar</a>
+            <a class="padding margen" href="FAQ.html">Preguntas Frecuentes</a>
+            <a class="padding margen" href="contacto.html">Contáctanos</a>
+        </div>
+
+        <div class="red  elementos margin-section">
+            <h4 class="padding">Nuestras Redes</h4>
+            <div class=" contenedor-redes padding margen">
+                <div class="fb">
+                    <p>a</p>
+                </div>
+                <div class="wsp">
+                    <p>a</p>
+                </div>
+                <div class="twich">
+                    <p>a</p>
+                </div>
+                <div class="tiktok">
+                    <p>a</p>
+                </div>
+                <div class="insta">
+                    <p>a</p>
+                </div>
+                <div class="twitter">
+                    <p>a</p>
+                </div>
+                <div class="youtube">
+                    <p>a</p>
+                </div>
+                <div class="in">
+                    <p>a</p>
+                </div>
+                <div class="avion">
+                    <p>a</p>
+                </div>
+                <div class="pinterest">
+                    <p>a</p>
+                </div>
+
+            </div>
+
+            <small class="powered">Powered by Christhian Aracena</small>
+        </div>
+
+
+    </footer>
+    <script src="miScript.js"></script>
+</body>
+
+</html>

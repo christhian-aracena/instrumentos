@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Web</title>
+</head>
+
+<body>
+	<nav class="main-nav">
+		<div id="toggle-menu" class="toggle-menu">
+			<img src="img/menu.png" alt="">
+		</div>
+		<ul id="main-menu" class="main-menu">
+			<li class="main-menu__item">
+				<a id="inicio" onclick="removeMenu()" href="index.html" class="main-menu__link sombra"><strong>Inicio</strong></a>
+			</li>
+			<li class="main-menu__item"> 
+				<a onclick="removeMenu()" href="#categorias" class="main-menu__link sombra"><strong>Categorias</strong> </a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#productos" class="main-menu__link sombra"><strong>Productos</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#ofertas" class="main-menu__link sombra"><strong>Ofertas</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#marcas" class="main-menu__link sombra"><strong>Marcas</strong></a>
+			</li>
+		</ul>
+	</nav>
+	<header class="padding margen">
+		<div class="contenedor-header contenedor padding">
+			<div class="logo principal">
+				<img class="margen-top main-logo" src="img/logo2.png" alt="">
+				<div class="slogan">
+					<h1 class="padding sombra">Tienda Armonía</h1>
+					<small class="sombra">instrumentos y accesorios</small>
+				</div>
+
+			</div>
+
+			<div class="find logo">
+
+				<input class="buscador margen" type="text" id="barra-buscar" value placeholder=" Buscar">
+				<button class="lupa-buscador buscador"><img class src="img/lupa.png" alt="icono"></button>
+			</div>
+
+			<div class="compras logo">
+				<a class="btn-sesion padding" href="#">Iniciar Sesión</a>
+
+				<a href="#">
+					<div class="carrito">
+						<div class="notificacion">
+							<p><strong>0</strong></p>
+						</div>
+					</div>
+				</a>
+
+			</div>
+		</div>
+	</header>
+
+
+	<section class="contenedor">
+		<h3 id="categorias" class="centrar-texto sombra margin-top-botton">CATEGORIAS</h3>
+		<div class="categoria margen padding margin-section">
+			<div class="txt-centrado cat-mic">
+				<a href="cat-mic.html">
+					<h4 class="hitbox">Microfonos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-ampli">
+				<a href="cat-cuerdas.html">
+					<h4 class="hitbox">Cuerdas</h4>
+				</a>
+
+
+			</div>
+
+			<div class="txt-centrado cat-cuerdas">
+				<a href="cat-escolar.html">
+					<h4 class="hitbox">Escolar</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-piano">
+				<a href="cat-teclados.html">
+					<h4 class="hitbox">Teclados</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-frotada">
+				<a href="cat-clasicos.html">
+					<h4 class="hitbox">Clasicos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-vientos">
+				<a href="cat-vientos.html">
+					<h4 class="hitbox">Vientos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-percu">
+				<a href="cat-percusion.html">
+					<h4 class="hitbox">Percusion</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-accesorios">
+				<a href="cat-accesorios.html">
+					<h4 class="hitbox">Accesorios</h4>
+				</a>
+			</div>
+		</div>
+	</section>
+	<hr class="contenedor">
+
+
+	<main class="contenedor">
+
+        <div class="politicas">
+
+            <h1 class="centrar-texto sombra margin-top-botton">POLITICAS DE LA TIENDA</h1>
+
+        </div>
+
+        <h3 class="politicas">
+            Política de privacidad:
+        </h3>
+        <p class="politicas">
+            La política de privacidad es un elemento importante de cualquier sitio web, ya que establece cómo se manejarán los datos personales de los clientes. Es importante asegurarse de que tu sitio web cumpla con todas las leyes de privacidad aplicables, incluido el Reglamento General de Protección de Datos (RGPD) si se encuentra en la Unión Europea. La política de privacidad debe indicar qué información se recopila y cómo se utiliza, así como cualquier otra información importante relacionada con la privacidad de los clientes.
+        </p>
+
+        <h3 class="politicas">Política de devolución y reembolso:</h3>
+        <p class="politicas">
+            Es posible que los clientes deseen devolver o cambiar un producto que compraron en tu tienda, por lo que es importante tener una política de devolución y reembolso clara. Deberías indicar cuánto tiempo tiene el cliente para devolver un producto, cuál es el proceso para hacerlo y cómo se manejará cualquier reembolso. También es importante establecer si hay algún tipo de costo asociado con la devolución del producto, como el costo del envío.
+        </p>
+        <h3 class="politicas">Política de envío:</h3>
+        <p class="politicas">
+            Los clientes querrán saber cuánto tiempo tardará en llegar su pedido y cuánto costará el envío. Por lo tanto, deberías proporcionar información clara sobre tu política de envío. Deberías indicar cuánto tiempo tardará en llegar el pedido, los costos de envío y cualquier otra información importante relacionada con el envío, como la forma en que se realizará el seguimiento del pedido.
+        </p>
+        <h3 class="politicas">Política de pago:</h3>
+        <p class="politicas">
+            Es importante proporcionar información clara sobre cómo se procesarán los pagos. Deberías indicar qué métodos de pago aceptas, cómo se procesarán los pagos y si hay algún costo asociado con el procesamiento de pagos. También es importante asegurarse de que el sitio web esté seguro y que la información del cliente esté protegida.
+        </p>
+        <h3 class="politicas">Política de garantía:</h3>
+        <p class="politicas">
+            Es posible que algunos productos que vendas tengan una garantía, por lo que deberías proporcionar información clara sobre cómo se manejará cualquier problema que surja con un producto. Deberías indicar cuánto tiempo dura la garantía, qué cubre y cómo se manejará cualquier problema que surja durante el período de garantía.
+        </p>
+        <h3 class="politicas">Política de seguridad:</h3>
+        <p class="politicas">
+            Es importante asegurarse de que el sitio web sea seguro y que la información del cliente esté protegida. Deberías proporcionar información clara sobre cómo se manejará la seguridad del sitio web, incluido el cifrado de datos y cualquier otra medida de seguridad que se haya implementado.
+        </p>
+	</main>
+
+	</section>
+
+
+
+
+
+	</section>
+	<footer class="pie contenedor margin-top-botton">
+		<div class="elementos margin-section">
+			<h4 class="padding margen">Información</h4>
+			<a class="padding margen" href="quienesSomos.html">Quienes Somos</a>
+			<a class="padding margen" href="politicas.html">Politicas de la tienda</a>
+			<a class="padding margen" href="politicaDevolucion.html">Politicas de devolución</a>
+			<a class="padding margen" href="politicasEnvio.html">Envíos</a>
+		</div>
+
+		<div class="elementos margin-section">
+			<h4 class="padding margen">Cuenta</h4>
+			<a class="padding margen" href="dashboard.html#dashboard">Mi Cuenta</a>
+			<a class="padding margen" href="dashboard.html#dashboard">Carrito</a>
+			<a class="padding margen" href="dashboard.html#dashboard">Orden</a>
+			<a class="padding margen" href="dashboard.html#dashboard">Envíos</a>
+		</div>
+
+		<div class="elementos margin-section">
+			<h4 class="padding margen">Ayuda</h4>
+			<a class="padding margen" href="comoLlegar.html">Cómo Llegar</a>
+			<a class="padding margen" href="comoComprar.html">Cómo Comprar</a>
+			<a class="padding margen" href="FAQ.html">Preguntas Frecuentes</a>
+			<a class="padding margen" href="contacto.html">Contáctanos</a>
+		</div>
+
+		<div class="red  elementos margin-section">
+			<h4 class="padding">Nuestras Redes</h4>
+			<div class=" contenedor-redes padding margen">
+				<div class="fb">
+					<p>a</p>
+				</div>
+				<div class="wsp">
+					<p>a</p>
+				</div>
+				<div class="twich">
+					<p>a</p>
+				</div>
+				<div class="tiktok">
+					<p>a</p>
+				</div>
+				<div class="insta">
+					<p>a</p>
+				</div>
+				<div class="twitter">
+					<p>a</p>
+				</div>
+				<div class="youtube">
+					<p>a</p>
+				</div>
+				<div class="in">
+					<p>a</p>
+				</div>
+				<div class="avion">
+					<p>a</p>
+				</div>
+				<div class="pinterest">
+					<p>a</p>
+				</div>
+
+			</div>
+
+			<small class="powered">Powered by Christhian Aracena</small>
+		</div>
+
+
+	</footer>
+	<script src="miScript.js"></script>
+</body>
+
+</html>

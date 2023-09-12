@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Web</title>
+</head>
+
+<body>
+	<nav class="main-nav">
+		<div id="toggle-menu" class="toggle-menu">
+			<img src="img/menu.png" alt="">
+		</div>
+		<ul id="main-menu" class="main-menu">
+			<li class="main-menu__item">
+				<a id="inicio" onclick="removeMenu()" href="index.html" class="main-menu__link sombra"><strong>Inicio</strong></a>
+			</li>
+			<li class="main-menu__item"> 
+				<a onclick="removeMenu()" href="#categorias" class="main-menu__link sombra"><strong>Categorias</strong> </a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#productos" class="main-menu__link sombra"><strong>Productos</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#ofertas" class="main-menu__link sombra"><strong>Ofertas</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="#marcas" class="main-menu__link sombra"><strong>Marcas</strong></a>
+			</li>
+		</ul>
+	</nav>
+    <header class="padding margen">
+        <div class="contenedor-header contenedor padding">
+            <div class="logo principal">
+                <img class="margen-top main-logo" src="img/logo2.png" alt="">
+                <div class="slogan">
+                    <h1 class="padding sombra">Tienda Armonía</h1>
+                    <small class="sombra">instrumentos y accesorios</small>
+                </div>
+
+            </div>
+
+            <div class="find logo">
+
+                <input class="buscador margen" type="text" id="barra-buscar" value placeholder=" Buscar">
+                <button class="lupa-buscador buscador"><img class src="img/lupa.png" alt="icono"></button>
+            </div>
+
+            <div class="compras logo">
+                <a class="btn-sesion padding" href="#">Iniciar Sesión</a>
+
+                <a href="#">
+                    <div class="carrito">
+                        <div class="notificacion">
+                            <p><strong>0</strong></p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contenedor">
+        <h3 id="categorias" class="centrar-texto sombra margin-top-botton">CATEGORIAS</h3>
+        <div class="categoria margen padding margin-section">
+			<div class="txt-centrado cat-mic">
+				<a href="cat-mic.html">
+					<h4 class="hitbox">Microfonos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-ampli">
+				<a href="cat-cuerdas.html">
+					<h4 class="hitbox">Cuerdas</h4>
+				</a>
+
+
+			</div>
+
+			<div class="txt-centrado cat-cuerdas">
+				<a href="cat-escolar.html">
+					<h4 class="hitbox">Escolar</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-piano">
+				<a href="cat-teclados.html">
+					<h4 class="hitbox">Teclados</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-frotada">
+				<a href="cat-clasicos.html">
+					<h4 class="hitbox">Clasicos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-vientos">
+				<a href="cat-vientos.html">
+					<h4 class="hitbox">Vientos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-percu">
+				<a href="cat-percusion.html">
+					<h4 class="hitbox">Percusion</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-accesorios">
+				<a href="cat-accesorios.html">
+					<h4 class="hitbox">Accesorios</h4>
+				</a>
+			</div>
+        </div>
+    </section>
+    <hr class="contenedor">
+
+
+    <main class="contenedor">
+
+
+        <h3 class="centrar-texto sombra margin-top-botton">ESCOLAR</h3>
+
+        <div class="iconos-nosotros margin-section">
+
+
+
+            
+            <div class="instrumentos-sb margin-section icono">
+
+				<div class="dcto">
+					<p><strong>-50% OFF</strong></p>
+				</div>
+
+
+				<h4 class="margin-title">Flauta Dulce</h4>
+				<div>
+					<img src="instruments/flauta-dulce1.webp" alt="">
+				</div>
+
+				<p class="justificar-texto margen padding instrumentos-padding"><strong>Marca: </strong>GEWA</p>
+				<p class="justificar-texto margen padding">Flauta dulce estandar con limpiador interno, instrumento de inicio, ideal para escolares.</p>
+
+				<p class="antes justificar-texto margen padding margin-section"><strong><span
+							class="negro">Antes:</span> <span>$19.990</span> </strong></p>
+
+				<div class="precio-disponible justificar-texto margen padding margin-section">
+
+					<p><strong><span class="negro">Ahora:</span> <span>$9.990</span> </strong></p>
+					<p> <span class="negro"><strong> Stock:</strong>17 unidades</span> </p>
+
+				</div>
+
+				<div class="agregar-carrito instrumentos-padding">
+					<a href="">Agregar
+						al Carrito</a>
+				</div>
+
+			</div>
+
+            
+
+
+            <div class="instrumentos-sb margin-section icono">
+
+				<div class="dcto">
+					<p><strong>-70% OFF</strong></p>
+				</div>
+
+
+				<h4 class="margin-title">Melodica</h4>
+				<div>
+					<img src="instruments/melodica-37-notas-allegro-roja-sh37-classic.jpg" alt="">
+				</div>
+
+				<p class="justificar-texto margen padding instrumentos-padding"><strong>Marca: </strong>Hohner</p>
+				<p class="justificar-texto margen padding">Melodica de 37 notas, estilo clasico, ideal para estudiantes y entusiastas de la musica.</p>
+
+				<p class="antes justificar-texto margen padding margin-section"><strong><span
+							class="negro">Antes: </span>$39.990 <span></span> </strong></p>
+
+				<div class="precio-disponible justificar-texto margen padding margin-section">
+
+					<p><strong><span class="negro">Ahora:</span> <span>$11.990</span> </strong></p>
+					<p> <span class="negro"><strong> Stock:</strong> 12 unidades</span> </p>
+
+				</div>
+
+				<div class="agregar-carrito instrumentos-padding">
+					<a href="">Agregar
+						al Carrito</a>
+				</div>
+
+			</div>
+
+
+            <div class="instrumentos-sb margin-section icono">
+
+				<div class="dcto">
+					<p><strong>-60% OFF</strong></p>
+				</div>
+
+
+				<h4 class="margin-title">Atril Partitura</h4>
+				<div>
+					<img src="instruments/atril-pauta-partitura-plegable-negro-con-funda.jpg" alt="">
+				</div>
+
+				<p class="justificar-texto margen padding instrumentos-padding"><strong>Marca: </strong>MaxTone</p>
+				<p class="justificar-texto margen padding">Atril tipo tripode. plataforma inclinada y una base estable para músicos y artistas.</p>
+
+				<p class="antes justificar-texto margen padding margin-section"><strong><span
+							class="negro">Antes:</span> <span>$29.990</span> </strong></p>
+
+				<div class="precio-disponible justificar-texto margen padding margin-section">
+
+					<p><strong><span class="negro">Ahora:</span> <span>$11.990</span> </strong></p>
+					<p> <span class="negro"><strong> Stock:</strong> 86 unidades</span> </p>
+
+				</div>
+
+				<div class="agregar-carrito instrumentos-padding">
+					<a href="">Agregar
+						al Carrito</a>
+				</div>
+
+			</div>
+
+
+
+            
+			<div class="instrumentos-sb margin-section icono">
+
+				<div class="dcto">
+					<p><strong>-15% OFF</strong></p>
+				</div>
+
+
+				<h4 class="margin-title">Armonica</h4>
+				<div>
+					<img src="instruments/armonica-fender-blues-deluxe-c-do.jpg" alt="">
+				</div>
+
+				<p class="justificar-texto margen padding instrumentos-padding"><strong>Marca: </strong>Fender</p>
+				<p class="justificar-texto margen padding">Armonica en C de excelente calidad, de la linea fender blues deluxe. </p>
+
+				<p class="antes justificar-texto margen padding margin-section"><strong><span
+							class="negro">Antes: </span>$39.990 <span></span> </strong></p>
+
+				<div class="precio-disponible justificar-texto margen padding margin-section">
+
+					<p><strong><span class="negro">Ahora:</span> <span>$33.990</span> </strong></p>
+					<p> <span class="negro"><strong> Stock:</strong> 37 unidades</span> </p>
+
+				</div>
+
+				<div class="agregar-carrito instrumentos-padding">
+					<a href="">Agregar
+						al Carrito</a>
+				</div>
+
+			</div>
+
+
+
+
+        </div>
+
+    </main>
+
+
+
+
+
+    </section>
+
+    <hr class="contenedor">
+
+    <section class="contenedor">
+        <h3 id="marcas" class="centrar-texto sombra margin-top-botton">NUESTRAS MARCAS</h3>
+        <div class="contenedor-marcas margin-section">
+            <div>
+                <img src="img/logo-alhambra.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-casio.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-electro.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-elixir.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-fender.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-gap.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-gianinni.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-hohner.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-marshall.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-mAudio.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-maxtone.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-ms.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-shure.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-squier.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-yamaha.png" alt="logo-alhambra">
+            </div>
+            <div>
+                <img src="img/logo-gewa.png" alt="logo-alhambra">
+            </div>
+        </div>
+    </section>
+
+    <hr class="contenedor">
+
+    <section class="contenedor">
+        <h3 class="centrar-texto sombra margin-top-botton">MAS SOBRE NOSOTROS</h3>
+        <div class="iconos-nosotros margin-section">
+            <div class="margin-section icono">
+                <img class="icono-nosotros" src="img/icono1.svg" alt="">
+                <h4 class="margin-section">SEGURIDAD</h4>
+                <p class="justificar-texto margen padding">La seguridad en tus compras online es nuestra máxima
+                    prioridad. Es por eso que utilizamos las últimas tecnologías de encriptación y verificación de
+                    identidad para asegurarnos de que tus transacciones sean seguras. </p>
+            </div>
+
+            <div class="margin-section icono">
+                <img class="icono-nosotros" src="img/icono2.svg" alt="">
+                <h4 class="margin-section">MEJOR PRECIO</h4>
+                <p class="justificar-texto margen padding">No solo nos preocupamos por tu seguridad en línea, sino
+                    también por ofrecerte las mejores ofertas. Visita nuestra sección de ofertas y descuentos para
+                    encontrar los productos que buscas, al precio más competitivo del mercado. </p>
+            </div>
+
+            <div class="margin-section icono">
+                <img class="icono-nosotros" src="img/icono3.svg" alt="">
+                <h4 class="margin-section">A TIEMPO</h4>
+                <p class="justificar-texto margen padding">Nos comprometemos a realizar entregas a tiempo. Trabajamos
+                    con las mejores empresas de logística para garantizar que tus pedidos lleguen en el plazo acordado y
+                    en perfectas condiciones. !compra con confianza! </p>
+            </div>
+
+        </div>
+
+
+        <section>
+
+
+        </section>
+
+
+
+    </section>
+    <footer class="pie contenedor margin-top-botton">
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Información</h4>
+            <a class="padding margen" href="quienesSomos.html">Quienes Somos</a>
+            <a class="padding margen" href="politicas.html">Politicas de la tienda</a>
+            <a class="padding margen" href="politicaDevolucion.html">Politicas de devolución</a>
+            <a class="padding margen" href="politicasEnvio.html">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Cuenta</h4>
+            <a class="padding margen" href="dashboard.html#dashboard">Mi Cuenta</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Carrito</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Orden</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Ayuda</h4>
+            <a class="padding margen" href="comoLlegar.html">Cómo Llegar</a>
+            <a class="padding margen" href="comoComprar.html">Cómo Comprar</a>
+            <a class="padding margen" href="FAQ.html">Preguntas Frecuentes</a>
+            <a class="padding margen" href="contacto.html">Contáctanos</a>
+        </div>
+
+        <div class="red  elementos margin-section">
+            <h4 class="padding">Nuestras Redes</h4>
+            <div class=" contenedor-redes padding margen">
+                <div class="fb">
+                    <p>a</p>
+                </div>
+                <div class="wsp">
+                    <p>a</p>
+                </div>
+                <div class="twich">
+                    <p>a</p>
+                </div>
+                <div class="tiktok">
+                    <p>a</p>
+                </div>
+                <div class="insta">
+                    <p>a</p>
+                </div>
+                <div class="twitter">
+                    <p>a</p>
+                </div>
+                <div class="youtube">
+                    <p>a</p>
+                </div>
+                <div class="in">
+                    <p>a</p>
+                </div>
+                <div class="avion">
+                    <p>a</p>
+                </div>
+                <div class="pinterest">
+                    <p>a</p>
+                </div>
+
+            </div>
+
+            <small class="powered">Powered by Christhian Aracena</small>
+        </div>
+
+
+    </footer>
+    <script src="miScript.js"></script>
+</body>
+
+</html>

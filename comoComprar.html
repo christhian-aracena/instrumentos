@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Web</title>
+</head>
+
+<body>
+	<nav class="main-nav">
+		<div id="toggle-menu" class="toggle-menu">
+			<img src="img/menu.png" alt="">
+		</div>
+		<ul id="main-menu" class="main-menu">
+			<li class="main-menu__item">
+				<a id="inicio" onclick="removeMenu()" href="index.html" class="main-menu__link sombra"><strong>Inicio</strong></a>
+			</li>
+			<li class="main-menu__item"> 
+				<a onclick="removeMenu()" href="#categorias" class="main-menu__link sombra"><strong>Categorias</strong> </a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#productos" class="main-menu__link sombra"><strong>Productos</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#ofertas" class="main-menu__link sombra"><strong>Ofertas</strong></a>
+			</li>
+			<li class="main-menu__item">
+				<a onclick="removeMenu()" href="index.html#marcas" class="main-menu__link sombra"><strong>Marcas</strong></a>
+			</li>
+		</ul>
+	</nav>
+    <header class="padding margen">
+        <div class="contenedor-header contenedor padding">
+            <div class="logo principal">
+                <img class="margen-top main-logo" src="img/logo2.png" alt="">
+                <div class="slogan">
+                    <h1 class="padding sombra">Tienda Armonía</h1>
+                    <small class="sombra">instrumentos y accesorios</small>
+                </div>
+
+            </div>
+
+            <div class="find logo">
+
+                <input class="buscador margen" type="text" id="barra-buscar" value placeholder=" Buscar">
+                <button class="lupa-buscador buscador"><img class src="img/lupa.png" alt="icono"></button>
+            </div>
+
+            <div class="compras logo">
+                <a class="btn-sesion padding" href="#">Iniciar Sesión</a>
+
+                <a href="#">
+                    <div class="carrito">
+                        <div class="notificacion">
+                            <p><strong>0</strong></p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+
+    <section class="contenedor">
+        <h3 id="categorias" class="centrar-texto sombra margin-top-botton">CATEGORIAS</h3>
+        <div class="categoria margen padding margin-section">
+			<div class="txt-centrado cat-mic">
+				<a href="cat-mic.html">
+					<h4 class="hitbox">Microfonos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-ampli">
+				<a href="cat-cuerdas.html">
+					<h4 class="hitbox">Cuerdas</h4>
+				</a>
+
+
+			</div>
+
+			<div class="txt-centrado cat-cuerdas">
+				<a href="cat-escolar.html">
+					<h4 class="hitbox">Escolar</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-piano">
+				<a href="cat-teclados.html">
+					<h4 class="hitbox">Teclados</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-frotada">
+				<a href="cat-clasicos.html">
+					<h4 class="hitbox">Clasicos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-vientos">
+				<a href="cat-vientos.html">
+					<h4 class="hitbox">Vientos</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-percu">
+				<a href="cat-percusion.html">
+					<h4 class="hitbox">Percusion</h4>
+				</a>
+			</div>
+
+			<div class="txt-centrado cat-accesorios">
+				<a href="cat-accesorios.html">
+					<h4 class="hitbox">Accesorios</h4>
+				</a>
+			</div>
+
+        </div>
+    </section>
+    <hr class="contenedor">
+
+
+    <main class="contenedor">
+
+        <div class="politicas">
+
+            <h1 class="centrar-texto sombra margin-top-botton">Cómo comprar en Tienda Armonía</h1>
+
+        </div>
+
+        
+        <ol>
+            <h3 class="politicas"> <li> Navega por nuestro sitio web</li></h3>
+
+            <p class="li">Navega por nuestro sitio web
+                Lo primero que debes hacer es visitar nuestro sitio web, donde encontrarás nuestra amplia selección de instrumentos musicales y accesorios. Puedes navegar por las diferentes categorías de productos o utilizar la barra de búsqueda para encontrar rápidamente lo que buscas.</p>
+
+                <h3 class="politicas"><li> Agrega productos a tu carrito</li></h3>
+
+            <p class="li">Una vez que hayas encontrado el producto que deseas comprar, selecciona la cantidad que deseas y haz clic en "Agregar al carrito". Puedes continuar navegando por nuestro sitio web y agregar más productos a tu carrito antes de finalizar tu compra.</p>
+
+                <h3 class="politicas"> <li> Revisa tu carrito y finaliza tu compra</li></h3>
+
+            <p class="li">Cuando hayas agregado todos los productos que deseas comprar a tu carrito, revisa cuidadosamente tu pedido y asegúrate de que todo sea correcto. Luego, haz clic en el botón "Finalizar compra" y completa la información requerida, como tu dirección de envío y datos de pago.</p>
+
+                <h3 class="politicas"><li> Realiza el pago</li></h3>
+
+            <p class="li">Aceptamos diferentes formas de pago, como tarjetas de crédito, transferencias bancarias y pagos en efectivo. Selecciona el método de pago que mejor se adapte a tus necesidades y sigue las instrucciones para completar el pago.</p>
+
+            <h3 class="politicas"><li> Recibe tu pedido</li></h3>
+
+            <p class="li">Una vez que hayas completado tu compra, nuestro equipo de envíos se encargará de preparar y enviar tu pedido lo más pronto posible. Recibirás una confirmación de envío con la información de seguimiento para que puedas rastrear el progreso de tu pedido.</p>
+        </ol>
+
+        <p class="politicas">En Tienda Armonía es fácil y conveniente. Nuestro sitio web está diseñado para ser intuitivo y fácil de usar, y nuestro equipo de servicio al cliente está disponible para ayudarte en todo lo que necesites. Si tienes alguna pregunta o necesitas ayuda durante el proceso de compra, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte.</p>
+
+    </main>
+
+    </section>
+
+
+
+
+
+    </section>
+    <footer class="pie contenedor margin-top-botton">
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Información</h4>
+            <a class="padding margen" href="quienesSomos.html">Quienes Somos</a>
+            <a class="padding margen" href="politicas.html">Politicas de la tienda</a>
+            <a class="padding margen" href="politicaDevolucion.html">Politicas de devolución</a>
+            <a class="padding margen" href="politicasEnvio.html">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Cuenta</h4>
+            <a class="padding margen" href="dashboard.html#dashboard">Mi Cuenta</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Carrito</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Orden</a>
+            <a class="padding margen" href="dashboard.html#dashboard">Envíos</a>
+        </div>
+
+        <div class="elementos margin-section">
+            <h4 class="padding margen">Ayuda</h4>
+            <a class="padding margen" href="comoLlegar.html">Cómo Llegar</a>
+            <a class="padding margen" href="comoComprar.html">Cómo Comprar</a>
+            <a class="padding margen" href="FAQ.html">Preguntas Frecuentes</a>
+            <a class="padding margen" href="contacto.html">Contáctanos</a>
+        </div>
+
+        <div class="red  elementos margin-section">
+            <h4 class="padding">Nuestras Redes</h4>
+            <div class=" contenedor-redes padding margen">
+                <div class="fb">
+                    <p>a</p>
+                </div>
+                <div class="wsp">
+                    <p>a</p>
+                </div>
+                <div class="twich">
+                    <p>a</p>
+                </div>
+                <div class="tiktok">
+                    <p>a</p>
+                </div>
+                <div class="insta">
+                    <p>a</p>
+                </div>
+                <div class="twitter">
+                    <p>a</p>
+                </div>
+                <div class="youtube">
+                    <p>a</p>
+                </div>
+                <div class="in">
+                    <p>a</p>
+                </div>
+                <div class="avion">
+                    <p>a</p>
+                </div>
+                <div class="pinterest">
+                    <p>a</p>
+                </div>
+
+            </div>
+
+            <small class="powered">Powered by Christhian Aracena</small>
+        </div>
+
+
+    </footer>
+    <script src="miScript.js"></script>
+</body>
+
+</html>
